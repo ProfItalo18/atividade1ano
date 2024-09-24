@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Músicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Músicas</h1>
+        <form id="musicForm">
+            <label for="numero">Sequência Numérica:</label>
+            <input type="number" id="numero" required>
+            <label for="musica">Música:</label>
+            <input type="text" id="musica" required>
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" required>
+            <label for="cantor">Cantor:</label>
+            <input type="text" id="cantor" required>
+            <label for="autoria">Autoria:</label>
+            <input type="text" id="autoria" required>
+            <button type="submit">Adicionar ao Catálogo</button>
+        </form>
+        <table id="musicTable">
+            <thead>
+                <tr>
+                    <th>Sequência Numérica</th>
+                    <th>Música</th>
+                    <th>Gênero</th>
+                    <th>Cantor</th>
+                    <th>Autoria</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button id="exportBtn">Exportar Planilha Dinâmica</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
