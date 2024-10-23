@@ -1,78 +1,105 @@
+:root {
+    --zissou-blue: #00334e;
+    --zissou-yellow: #ffc857;
+    --zissou-red: #f25f5c;
+    --zissou-beige: #e6ebe0;
+    --zissou-gray: #c1c7c9;
+    --font-primary: 'Futura', sans-serif;
+}
+
+/* Estilo do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: var(--font-primary);
+    background-color: var(--zissou-beige);
+    color: var(--zissou-blue);
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+h2 {
+    color: var(--zissou-red);
     text-align: center;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 label {
-    width: 100%;
-    margin-bottom: 5px;
+    font-size: 18px;
+    color: var(--zissou-blue);
 }
 
-input {
-    width: 48%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--zissou-gray);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: white;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--zissou-yellow);
+    color: var(--zissou-blue);
     border: none;
-    border-radius: 5px;
+    padding: 12px 20px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: var(--zissou-red);
+    color: white;
 }
 
+/* Estilo da tabela */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: var(--zissou-beige);
+    border: 1px solid var(--zissou-gray);
 }
 
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+th, td {
+    border: 1px solid var(--zissou-gray);
+    padding: 12px;
+    text-align: center;
 }
 
-table th {
-    background-color: #f2f2f2;
+th {
+    background-color: var(--zissou-yellow);
+    color: var(--zissou-blue);
 }
 
-#exportBtn {
+td {
+    background-color: var(--zissou-beige);
+}
+
+.remover {
+    background-color: var(--zissou-red);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.remover:hover {
+    background-color: #ff3333;
+}
+
+/* Estilo do botão de impressão */
+#imprimirCatalogo {
+    background-color: var(--zissou-blue);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
     margin-top: 20px;
-    background-color: #007BFF;
+    border-radius: 8px;
 }
 
-#exportBtn:hover {
-    background-color: #0056b3;
+#imprimirCatalogo:hover {
+    background-color: var(--zissou-gray);
 }
